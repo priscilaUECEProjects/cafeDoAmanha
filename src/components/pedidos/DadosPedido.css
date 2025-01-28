@@ -1,0 +1,134 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+}
+
+.pedido-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #845e46;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+.pedido-info {
+    background-color: #c3b091;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.pedido-info h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.pedido-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.pedido-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.pedido-form label,
+.pedido-form input,
+.pedido-form select {
+    width: 100%; 
+    max-width: 300px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 30px;
+    border: none;
+}
+
+.pedido-info-payment{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.pedido-info-payment-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 10px;
+}
+
+.pedido-info-payment-item input[type="radio"]:checked {
+    accent-color: #492a14; 
+}
+
+.pedido-form label {
+    font-size: 18px;
+    margin: 0;
+}
+
+.pedido-info-button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #663f27;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 100%; 
+    max-width: 300px;
+    margin: 10px auto 5px auto;
+}
+
+.pedido-info-button:hover {
+    background-color: #845e46;
+}
+
+.pedido-info-button:active {
+    background-color: #663f27;
+}
+
+.pedido-form-buttons {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.voltar-pedido-button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #2f1809;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px; 
+}
+
+.voltar-pedido-button:hover {
+    background-color: #492a14;
+}
+
+.voltar-pedido-button:active {
+    background-color: #2f1809;
+}

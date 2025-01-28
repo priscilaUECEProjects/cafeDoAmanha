@@ -1,0 +1,42 @@
+.pedido-final-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #c3b091;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+.pedido-final-content{
+    background-color: #845e46;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.pedido-final-button{
+    padding: 10px;
+    font-size: 16px;
+    background-color: #663f27;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto 5px auto;
+}
+
+.pedido-final-button:hover {
+    background-color: #906951;
+}
+
+.pedido-final-button:active {
+    background-color: #663f27;
+}

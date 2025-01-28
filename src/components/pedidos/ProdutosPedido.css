@@ -1,0 +1,51 @@
+.pedido-container{
+    font-family: 'Merriweather', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c3b091;
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+}
+
+.pedido-table{
+    background-color: #845e46;
+    border-radius: 30px;
+}
+
+.pedido-table thead th{
+    text-decoration: underline;
+}
+
+.pedido-table thead th,
+.pedido-table tbody td {
+    padding: 10px 20px;
+    text-align: center;
+    vertical-align: middle;
+    color: #ffffff;
+}
+
+.pedido-button {
+    background-color: #663f27;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.pedido-button:hover {
+    background-color: #845e46;
+}
+
+.pedido-button:active {
+    background-color: #663f27;
+}

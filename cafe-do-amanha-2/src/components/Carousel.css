@@ -1,4 +1,4 @@
-/* src/components/Carousel.css */
+
 .carousel-item img {
     height: 500px;
     object-fit: cover;
@@ -21,7 +21,7 @@
     font-family: 'Georgia', serif;
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
     .carousel-item img {
         height: auto; 

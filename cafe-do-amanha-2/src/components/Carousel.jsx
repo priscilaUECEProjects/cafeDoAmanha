@@ -1,12 +1,12 @@
-// src/components/Carousel.js
+
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import './Carousel.css';
 
 
-import foto1 from '../images/fundadores.jpeg';
-import foto2 from '../images/delicias.png';
-import foto3 from '../images/cafe2.png';
+import foto1 from '../images/fundadores3.jpg';
+import foto2 from '../images/comidas2.jpg';
+import foto3 from '../images/espaço.jpeg';
 
 function ImageCarousel() {
     return (

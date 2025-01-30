@@ -11,6 +11,16 @@ const Home = () => {
       </Link>
       <Link to="/pedido" className='home-link'>
       Ir para Pedido</Link>
+      <Link to="/sobre-nos" className='home-link'>
+      Ir para Sobre nos</Link>
+      <Link to="/historias" className='home-link'>
+      Ir para Historias</Link>
+      <style>{`
+      .home-link{
+        display: flex;
+        justify-content: space-between;
+      }
+      `}</style>
     </div>
   );
 };

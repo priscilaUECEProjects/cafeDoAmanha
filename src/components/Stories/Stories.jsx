@@ -28,7 +28,7 @@ function Stories() {
                     <div className="story">
                         <h2>Um Encontro de Paixões</h2>
                         <p>
-                            Quando Priscila, Maria e Pedro se conheceram, parecia que o destino havia reunido almas complementares. Os três amigos decidiram unir o as inspirações das viagens de Maria e o amor que Priscila e Pedro compartilham pela música. Juntos, transformaram o Café do Amanhã em um lugar onde cada visita é uma nova história, cada xícara de café um novo capítulo, e cada canção no ar uma celebração de suas paixões.
+                            Quando Priscila e Maria se conheceram, parecia que o destino havia reunido almas complementares. As duas amigas decidiram unir as inspirações das viagens de Maria e o amor que Priscila compartilha pela música. Juntas, transformaram o Café do Amanhã em um lugar onde cada visita é uma nova história, cada xícara de café um novo capítulo, e cada canção no ar uma celebração de suas paixões.
                         </p>
                     </div>
                 </div>

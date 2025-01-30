@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import { Tab, Tabs} from 'react-bootstrap';
 import './/Menu.css';
 import BotaoAdicionar from './BotaoAdicionar';
+import Header from '../header/Header';
+import Footer from '../footer/Footer';
 
 import menu1 from './/imagens/graos.jpg';
 import menu2 from './/imagens/petit.jpg';
@@ -14,6 +16,8 @@ export default function Menu({ menuItems, onAdicionar }){
     const [imagemAtual, setImagemAtual] = useState(menu1);
 
     return(
+        <div>
+        <Header/>
         <div className='menu-container'>
             <div className='menu-content'>
                 <div className='menu-image'>
@@ -64,6 +68,8 @@ export default function Menu({ menuItems, onAdicionar }){
                 
             </div>
         </div>
+        <Footer />
+    </div>
     );
 }
 

@@ -1,9 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./ProdutosPedido.css";
+import Header from '../header/Header';
+import Footer from '../footer/Footer';
 
 export default function ProdutosPedido({ pedido }) {
     return (
+        <div>
+            <Header />
         <div className="pedido-container">
             <table className="pedido-table">
                 <thead>
@@ -24,6 +28,8 @@ export default function ProdutosPedido({ pedido }) {
                 </tbody>
             </table>
             <Link to="/pedido-info"><button className="pedido-button">Confirmar Pedido</button></Link>
+        </div>
+        <Footer />
         </div>
     );
 }

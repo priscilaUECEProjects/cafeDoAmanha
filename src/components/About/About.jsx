@@ -1,9 +1,13 @@
 import React from 'react';
 import './About.css';
 import ImageCarousel from './Carousel';
+import Header from '../header/Header';
+import Footer from '../footer/Footer';
 
 function About() {
     return (
+        <div>
+        <Header />  
         <section id="about" className="about-section">
             <div className="container">
                 <h1>Sobre Nós</h1>
@@ -13,6 +17,8 @@ function About() {
                 <ImageCarousel />
             </div>
         </section>
+        <Footer />
+        </div>
     );
 }
 

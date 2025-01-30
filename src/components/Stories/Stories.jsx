@@ -1,8 +1,12 @@
 import React from 'react';
 import './Stories.css';
+import Header from '../header/Header';
+import Footer from '../footer/Footer';
 
 function Stories() {
     return (
+        <div>
+            <Header />
         <section className="stories-section">
             <div className="container">
                 <h1>Histórias</h1>
@@ -30,6 +34,8 @@ function Stories() {
                 </div>
             </div>
         </section>
+        <Footer />
+        </div>
     );
 }
 

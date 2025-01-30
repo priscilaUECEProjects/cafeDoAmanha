@@ -1,6 +1,8 @@
 import { Link, useParams } from 'react-router-dom';
 import BotaoAdicionar from './BotaoAdicionar';
 import './DetalhesMenu.css';
+import Header from '../header/Header';
+import Footer from '../footer/Footer';
 
 export default function DetalhesMenu({ menuItems, onAdicionar }) {
     const { categoria, id } = useParams();
@@ -11,6 +13,8 @@ export default function DetalhesMenu({ menuItems, onAdicionar }) {
     }
 
     return (
+        <div>
+            <Header />
         <div className='details-container'>
             <div className='details-content'>
             <h1>{item.name}</h1>
@@ -27,6 +31,8 @@ export default function DetalhesMenu({ menuItems, onAdicionar }) {
                 <Link to={'/menu'} ><button className='voltar-menu'>Voltar</button></Link>
                 <BotaoAdicionar onAdicionar={()=> onAdicionar(item)}/>
             </div>
+        </div>
+        <Footer />
         </div>
     );
 }

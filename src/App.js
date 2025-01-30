@@ -1,12 +1,13 @@
 import './App.css';
 import Menu from './components/menu/Menu';
 import DetalhesMenu from './components/menu/DetalhesMenu';
-import Home from './components/Home';
 import ProdutosPedido from './components/pedidos/ProdutosPedido';
 import DadosPedido from './components/pedidos/DadosPedido';
 import FinalPedido from './components/pedidos/FinalPedido';
 import About from './components/About/About';
 import Stories from './components/Stories/Stories';
+import Hero from './components/hero/Hero';
+import Contato from './components/contato/Contato';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
@@ -270,12 +271,13 @@ export default function App() {
             <Routes>
             <Route path="/sobre-nos" element={<About />} /> 
             <Route path="/historias" element={<Stories />} />
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Hero />} />
             <Route path="/menu" element={<Menu menuItems={menuItems} onAdicionar={adicionarItem} />} />
             <Route path="/detalhes/:categoria/:id" element={<DetalhesMenu menuItems={menuItems} onAdicionar={adicionarItem} />} />
             <Route path="/pedido" element={<ProdutosPedido pedido={pedido} />} />
             <Route path="/pedido-info" element={<DadosPedido />}/>
             <Route path="/pedido-finalizado" element={<FinalPedido />} /> 
+            <Route path="/contato" element={<Contato/>} />
             </Routes>
         </Router>
     );

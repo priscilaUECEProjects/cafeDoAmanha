@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import './DadosPedido.css';
 import { useEffect } from 'react';
 import Inputmask from 'inputmask';
+import Header from '../header/Header';
+import Footer from '../footer/Footer';
 
 export default function DadosPedido() {
     useEffect(() => {
@@ -11,6 +13,8 @@ export default function DadosPedido() {
         }
     }, []);
     return (
+        <div>
+            <Header />
             <div className="pedido-info-container">
             <div className="pedido-info">
             <h2>Informações para entrega</h2>
@@ -38,6 +42,8 @@ export default function DadosPedido() {
                 </div>
             </form>
         </div>   
-        </div>     
+        </div>
+        <Footer />
+        </div>    
     );
 }

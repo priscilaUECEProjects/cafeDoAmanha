@@ -1,0 +1,31 @@
+.footer {
+    background-color: #3f2718;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative; /* Ajustado para evitar sobreposição */
+    width: 100%;
+    z-index: 2; /* Certifica que o footer fique acima de outros elementos */
+    font-family: 'Merriweather', serif;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px 0;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+    }
+}

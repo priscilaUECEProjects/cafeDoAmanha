@@ -6,7 +6,7 @@ function Stories() {
         <section className="stories-section">
             <div className="container">
                 <h1>Histórias</h1>
-                <p>Descubra as histórias inspiradoras que fazem parte do Café do Amanhã. Desde as viagens aventureiras de Maria até as serenatas à beira-mar de Pedro, cada momento é uma celebração de suas paixões.</p>
+                <p>Descubra as histórias inspiradoras que fazem parte do Café do Amanhã. <br/> Desde as viagens aventureiras de Maria até as serenatas à beira-mar de Pedro, cada momento é uma celebração de suas paixões.</p>
 
                 <div className="story-list">
                     <div className="story">

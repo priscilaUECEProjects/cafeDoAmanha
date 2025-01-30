@@ -161,7 +161,7 @@ export default function App() {
         quantity: 0,
       },
     ],
-    BebidasGeladas: [
+    bebidasGeladas: [
       {
         id: 19,
         name: "Sorvete de Baunilha",
@@ -268,7 +268,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/menu" element={<Menu menuItems={menuItems} onAdicionar={adicionarItem} />} />
-        <Route path="/detalhes/:categoria/:id" element={<DetalhesMenu menuItems={menuItems} />} />
+        <Route path="/detalhes/:categoria/:id" element={<DetalhesMenu menuItems={menuItems} onAdicionar={adicionarItem} />} />
         <Route path="/pedido" element={<ProdutosPedido pedido={pedido} />} />
         <Route path="/pedido-info" element={<DadosPedido />}/>
         <Route path="/pedido-finalizado" element={<FinalPedido />} />

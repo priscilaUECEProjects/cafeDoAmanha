@@ -1,8 +1,8 @@
 .stories-section {
     font-family: 'Merriweather', serif;
     padding: 50px 20px;
-    background-color: #c3b091;
-    color: #4a2c2a;
+    background-color: #d7c7ac;
+    color: #65442c;
     text-align: center;
 }
 
@@ -20,7 +20,6 @@
 .stories-section p {
     font-size: 1.2rem;
     margin-bottom: 30px;
-    text-align: center;
 }
 
 .story-list {

@@ -4,9 +4,9 @@ import { Carousel } from 'react-bootstrap';
 import './Carousel.css';
 
 
-import foto1 from '../images/fundadores3.jpg';
-import foto2 from '../images/comidas2.jpg';
-import foto3 from '../images/espaço.jpeg';
+import foto1 from './images/fundadores3.jpg';
+import foto2 from './images/comidas2.jpg';
+import foto3 from './images/espaço.jpeg';
 
 function ImageCarousel() {
     return (

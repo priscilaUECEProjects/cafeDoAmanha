@@ -1,4 +1,3 @@
-// src/components/Stories.js
 import React from 'react';
 import './Stories.css';
 

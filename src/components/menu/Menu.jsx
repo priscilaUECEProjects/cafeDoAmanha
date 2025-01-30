@@ -5,11 +5,11 @@ import BotaoAdicionar from './BotaoAdicionar';
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
 
-import menu1 from './/imagens/graos.jpg';
-import menu2 from './/imagens/petit.jpg';
-import menu3 from './/imagens/croissant.jpeg';
-import menu4 from './/imagens/milk.jpeg';
-import menu5 from './/imagens/cha.jpeg';
+import menu1 from './imagens/graos.jpg';
+import menu2 from './imagens/petit.jpg';
+import menu3 from './imagens/croissant.jpeg';
+import menu4 from './imagens/milk.jpeg';
+import menu5 from './imagens/cha.jpeg';
 import { Link } from 'react-router-dom';
 
 export default function Menu({ menuItems, onAdicionar }){
@@ -36,7 +36,7 @@ export default function Menu({ menuItems, onAdicionar }){
                             case 'especiais':
                                 setImagemAtual(menu3);
                                 break;
-                            case 'bebidasGeladas':
+                            case 'BebidasGeladas':
                                 setImagemAtual(menu4);
                                 break;
                             case 'chás':

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { Tab, Tabs} from 'react-bootstrap';
 import './/Menu.css';
+import BotaoAdicionar from './BotaoAdicionar';
 
 import menu1 from './/imagens/graos.jpg';
 import menu2 from './/imagens/petit.jpg';
@@ -51,7 +52,7 @@ export default function Menu({ menuItems, onAdicionar }){
                                                 </Link></div>
                                             <div className='right-info'>
                                                 <span className='menu-price'>R$ {item.price.toFixed(2)}</span>| 
-                                                <button className='menu-button' onClick={()=> onAdicionar(item)}>+</button>
+                                                <BotaoAdicionar onAdicionar={()=> onAdicionar(item)}/>
                                             </div>
                                         </li>
                                     ))}

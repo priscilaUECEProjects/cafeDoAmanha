@@ -1,0 +1,36 @@
+.add-button {
+    position: relative;
+    padding: 0;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+    background-color: #51321c;
+    color: #ffffff;
+    border: solid 2px #ffffff;
+    font-weight: bolder;
+    cursor: pointer;
+
+    text-align: center;
+    line-height: normal;
+}
+
+.add-button::after {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    line-height: 1;
+}
+
+.add-button:hover {
+    border-color: #d2691e;
+    color: #d2691e;
+}
+
+.add-button:active {
+    color: #ffffff;
+    border-color: #ffffff;
+}

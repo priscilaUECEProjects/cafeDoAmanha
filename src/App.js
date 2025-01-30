@@ -11,8 +11,7 @@ import Stories from './components/Stories/Stories';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
 
-
-function App() {
+export default function App() {
     const menuItems = {
         cafés: [
           {
@@ -266,7 +265,6 @@ function App() {
         });
       };
 
-
     return (
         <Router>
             <Routes>
@@ -283,4 +281,3 @@ function App() {
     );
 }
 
-export default App;

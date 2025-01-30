@@ -1,7 +1,8 @@
 import { Link, useParams } from 'react-router-dom';
+import BotaoAdicionar from './BotaoAdicionar';
 import './DetalhesMenu.css';
 
-export default function DetalhesMenu({ menuItems }) {
+export default function DetalhesMenu({ menuItems, onAdicionar }) {
     const { categoria, id } = useParams();
     const item = menuItems?.[categoria]?.find((item) => item.id === parseInt(id, 10));
 
@@ -22,7 +23,10 @@ export default function DetalhesMenu({ menuItems }) {
                     ))}
                 </ul>
             </div>
-            <Link to={'/menu'} ><button className='voltar-menu'>Voltar</button></Link>
+            <div className="buttons">
+                <Link to={'/menu'} ><button className='voltar-menu'>Voltar</button></Link>
+                <BotaoAdicionar onAdicionar={()=> onAdicionar(item)}/>
+            </div>
         </div>
     );
 }

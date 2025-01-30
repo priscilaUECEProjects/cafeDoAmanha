@@ -36,7 +36,7 @@ export default function Menu({ menuItems, onAdicionar }){
                             case 'especiais':
                                 setImagemAtual(menu3);
                                 break;
-                            case 'BebidasGeladas':
+                            case 'bebidasGeladas':
                                 setImagemAtual(menu4);
                                 break;
                             case 'chás':

@@ -1,8 +1,8 @@
 import React from 'react';
 import './About.css';
 import ImageCarousel from './Carousel';
-import Header from '../header/Header';
-import Footer from '../footer/Footer';
+import Header from '../../header/Header';
+import Footer from '../../footer/Footer';
 
 function About() {
     return (

@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 import { Tab, Tabs} from 'react-bootstrap';
 import './/Menu.css';
 import BotaoAdicionar from './BotaoAdicionar';
-import Header from '../header/Header';
-import Footer from '../footer/Footer';
+import Header from '../../header/Header';
+import Footer from '../../footer/Footer';
 
 import menu1 from './imagens/graos.jpg';
 import menu2 from './imagens/petit.jpg';
@@ -12,7 +12,7 @@ import menu4 from './imagens/milk.jpeg';
 import menu5 from './imagens/cha.jpeg';
 import { Link } from 'react-router-dom';
 
-export default function Menu({ menuItems, onAdicionar }){
+export default function Menu({ menuData, onAdicionar }){
     const [imagemAtual, setImagemAtual] = useState(menu1);
 
     return(
@@ -46,10 +46,10 @@ export default function Menu({ menuItems, onAdicionar }){
                                 setImagemAtual(menu1);
                         }
                     }}>
-                        {Object.entries(menuItems).map(([categoria, index]) => (
+                        {Object.entries(menuData).map(([categoria, index]) => (
                             <Tab key={categoria} eventKey={categoria} title={categoria.charAt(0).toUpperCase() + categoria.slice(1)}>
                                 <ul className="menu-list">
-                                    {menuItems[categoria].map((item, index) => (
+                                    {menuData[categoria].map((item, index) => (
                                         <li key={index}>
                                             <div>{item.name}<Link to={`/detalhes/${categoria}/${item.id}`} className='details-link'>
                                                 <span className="material-symbols-outlined icon">chevron_right</span>

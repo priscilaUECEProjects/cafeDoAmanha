@@ -85,6 +85,10 @@ ul.menu-list li span {
     border: none;
 }
 
+.nav-tabs .nav-link.active:hover{
+    color: #d2691e;
+}
+
 .nav-tabs .nav-link:hover {
     color: #ffffff;
 }

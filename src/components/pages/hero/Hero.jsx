@@ -1,6 +1,6 @@
 import './Hero.css';
-import Header from '../header/Header';
-import Footer from '../footer/Footer';
+import Header from '../../header/Header';
+import Footer from '../../footer/Footer';
 
 export default function Hero() {
     return (

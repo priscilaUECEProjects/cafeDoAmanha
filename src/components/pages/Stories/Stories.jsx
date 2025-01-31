@@ -1,7 +1,7 @@
 import React from 'react';
 import './Stories.css';
-import Header from '../header/Header';
-import Footer from '../footer/Footer';
+import Header from '../../header/Header';
+import Footer from '../../footer/Footer';
 
 function Stories() {
     return (

@@ -1,14 +1,13 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "./ProdutosPedido.css";
-import Header from '../header/Header';
-import Footer from '../footer/Footer';
+import Header from '../../header/Header';
+import Footer from '../../footer/Footer';
 
-export default function ProdutosPedido({ pedido }) {
+export default function ProdutosPedido({ pedido, isVisible, totalCompra }) {
     return (
         <div>
             <Header />
-        <div className="pedido-container">
+        {isVisible && (<div className="pedido-container">
             <table className="pedido-table">
                 <thead>
                     <tr>
@@ -27,7 +26,13 @@ export default function ProdutosPedido({ pedido }) {
                     ))}
                 </tbody>
             </table>
+            <div className="total">
+                <h3>Total: R${totalCompra.toFixed(2)}</h3>
+            </div>
             <Link to="/pedido-info"><button className="pedido-button">Confirmar Pedido</button></Link>
+        </div>)} 
+        <div className="empty-pedido">
+            <h1 className="empty-pedido-text">Seu pedido está vazio.</h1>
         </div>
         <Footer />
         </div>

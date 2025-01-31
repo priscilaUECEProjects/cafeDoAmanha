@@ -1,11 +1,13 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './DadosPedido.css';
 import { useEffect } from 'react';
 import Inputmask from 'inputmask';
-import Header from '../header/Header';
-import Footer from '../footer/Footer';
+import Header from '../../header/Header';
+import Footer from '../../footer/Footer';
 
 export default function DadosPedido() {
+    const [nomeUsuario, setNomeUsuario] = useState('');
     useEffect(() => {
         const phoneInput = document.getElementById('phone');
         if (phoneInput) {
@@ -20,7 +22,8 @@ export default function DadosPedido() {
             <h2>Informações para entrega</h2>
             <form className="pedido-form">
                 <label htmlFor="name">Nome:</label>
-                <input type="text" id="name" name="name" required />
+                <input type="text" id="name" name="name" value={nomeUsuario}
+                onChange={(e) => setNomeUsuario(e.target.value)} required />
                 <label htmlFor="address">Endereço:</label>
                 <input type="text" id="address" name="address" required />
                 <label htmlFor="phone">Telefone:</label>
@@ -36,8 +39,8 @@ export default function DadosPedido() {
                         <input type="radio" id="pix" name="payment" value="pix" required />
                     </div>
                 </div>
-                <div class name="pedido-info-buttons">
-                    <Link to={'/pedido-finalizado'}><button type="submit" className="pedido-info-button">Finalizar Pedido</button></Link>
+                <div className="pedido-info-buttons">
+                    <Link to={'/pedido-finalizado'} state={{nomeUsuario: nomeUsuario}}><button type="button" className="pedido-info-button">Finalizar Pedido</button></Link>
                     <Link to={'/pedido'}><button type="button" className="voltar-pedido-button">Voltar</button></Link>
                 </div>
             </form>

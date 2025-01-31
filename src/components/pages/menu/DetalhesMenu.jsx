@@ -1,12 +1,12 @@
 import { Link, useParams } from 'react-router-dom';
 import BotaoAdicionar from './BotaoAdicionar';
 import './DetalhesMenu.css';
-import Header from '../header/Header';
-import Footer from '../footer/Footer';
+import Header from '../../header/Header';
+import Footer from '../../footer/Footer';
 
-export default function DetalhesMenu({ menuItems, onAdicionar }) {
+export default function DetalhesMenu({ menuData, onAdicionar }) {
     const { categoria, id } = useParams();
-    const item = menuItems?.[categoria]?.find((item) => item.id === parseInt(id, 10));
+    const item = menuData?.[categoria]?.find((item) => item.id === parseInt(id, 10));
 
     if (!item) {
         return <h1>Item não encontrado</h1>;
